@@ -11,7 +11,7 @@ const TradingAccount = () => {
         <div className="trading-account-container">
             <div className='trading-section-1'>
                 <div className='trading-section1-child-1'>
-                    <p className='section-highlight'>Accound</p>
+                    <p className='section-highlight'>Account</p>
                     <h1 className='section-heading'>Trading Account</h1>
                 </div>
                 <div className='trading-section1-child-2'>
@@ -35,8 +35,8 @@ const TradingAccount = () => {
             </div>
             <div className='trading-section-2'>
                 <div className='trading-section2-child-1'>
-                <p className='section-highlight'>Accound</p>
-                <h1 className='section-heading'>Trading Account</h1>
+                <p className='section-highlight'>Account</p>
+                <h1 className='section-heading'>About RiseFX </h1>
                 <div className='inner-child' onClick={() => setActiveCard(0)}>
                     <h2>Who we are</h2>
                     {activeCard === 0 && (
@@ -93,7 +93,7 @@ const TradingAccount = () => {
                 <div className='section-4-child-2'>
                     <div className='section-4-inner-child-1'>
                         <h2 className='heading'>Forex Trading</h2>
-                        <img src='/images/trading-1.png' />
+                        <img src='/images/forex-icon.png' />
                         <div className='section-4-cards-hover'>
                             <p>One of the primary methods of gold trading is through the spot</p>
                             <button className='section-4-hoverbtn'>Start Trading Know</button>
@@ -101,7 +101,7 @@ const TradingAccount = () => {
                     </div>
                     <div className='section-4-inner-child-1'>
                         <h2 className='heading'>Metals Trading</h2>
-                        <img src='/images/trading-1.png' />
+                        <img src='/images/metal-icon.png' />
                         <div className='section-4-cards-hover'>
                             <p>One of the primary methods of gold trading is through the spot</p>
                             <button className='section-4-hoverbtn'>Start Trading Know</button>
@@ -109,7 +109,7 @@ const TradingAccount = () => {
                     </div>
                     <div className='section-4-inner-child-1'>
                         <h2 className='heading'>Indices Trading</h2>
-                        <img src='/images/trading-1.png' />
+                        <img src='/images/indices-icon.png' />
                         <div className='section-4-cards-hover'>
                             <p>One of the primary methods of gold trading is through the spot</p>
                             <button className='section-4-hoverbtn'>Start Trading Know</button>

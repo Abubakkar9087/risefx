@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className='navbar-container'>
         <div className='navbar-1'>
           <div className='navbar-child number'>
-            <i className="fa fa-phone" aria-hidden="true"></i>
+            <img src='/images/call-icon.png' alt='error'  className='call-icon'/>
             <span style={{ marginLeft: '5px' }}>+91 9876543210</span>
           </div>
           <div className='navbar-child text-changing'>
@@ -37,6 +37,9 @@ const Navbar = () => {
           <div className='navbar-child'>
             <button className='btn-open-account'>Open Account</button>
             <button className='btn-login'>Login</button>
+            <div className='downlaod-app'>
+            <button className='btn-download'>Get App</button>
+            </div>
           </div>
         </div>
 
@@ -52,14 +55,16 @@ const Navbar = () => {
                 </li>
               </Link>
 
+                <Link to='/About'>
               <li className='navbar-item has-dropdown'>
                 About
-                <div className='dropdown'>
+                {/* <div className='dropdown'>
                   <Link to='/mission'>Our Mission</Link>
                   <Link to='/services'>Our Services</Link>
                   <Link to='/whyrisefx'>Why RiseFX</Link>
-                </div>
+                </div> */}
               </li>
+                  </Link>
 
               <li className='navbar-item has-dropdown'>
                 Services
@@ -105,9 +110,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className='navbar-child nav2-download'>
-            <button className='btn-download'>Download</button>
-          </div>
+          
           <div className="custom-hamburger" onClick={() => document.querySelector('.custom-ham-nav').classList.toggle('custom-active')}>
             <img src="/images/hamburger.png" alt="menu" />
             <div className="custom-ham-nav">
@@ -169,6 +172,28 @@ const Navbar = () => {
             </div>
           </div>
 
+        </div>
+        <div className='mobile-icon'>
+          <Link to='/'>
+          <img src='/images/home-icon.svg' alt='error'/>
+          Home
+          </Link>
+          <Link to='/'>
+          <img src='/images/about-icon.svg' alt='error'/>
+          About
+          </Link>
+          <Link to='/'>
+          <img src='/images/services-icon.svg' alt='error'/>
+          Services
+          </Link>
+          <Link to='/'>
+          <img src='/images/contact-icon.svg' alt='error'/>
+          Contact
+          </Link>
+          <Link to='/'>
+          <img src='/images/partner.svg' alt='error'/>
+          Partner
+          </Link>
         </div>
       </div>
     </>
