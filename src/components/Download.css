@@ -1,0 +1,87 @@
+.download-container{
+    width: 100%;
+    min-height: 80vh;
+    background-color: var(--color-light-grey);
+    padding: 30px;
+}
+.download-section{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 30px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    background-image: url(/public/images/shape-4.png);
+}
+.download-child{
+    min-width: 500px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.download-inner-child{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    
+    padding: 10px;
+
+    p{
+        width: 120px;
+    }
+    h1{
+        color: var(--color-white);
+        font-size: 35px;
+    }
+    h3{
+        color: var(--color-white);
+        font-weight: 400;
+        max-width: 500px;
+    }
+}
+.download-btns{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    img{
+        width: 80px;
+        height: 50px;
+        background-color: aliceblue;
+        padding: 0px 15px;
+        border-radius: 10px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}
+.download-child-2{
+    background-image: url(/public/images/mockup-1.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+@media(max-width:630px){
+    .download-child{
+        min-width: 100%;
+        min-height: 300px;
+    }
+}

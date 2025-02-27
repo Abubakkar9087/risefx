@@ -1,3 +1,32 @@
+/* colors roots */
+:root {
+  --color-primary: #e6c614;
+  --color-secondary: #131615;
+  --color-white: #ffffff;
+  --color-light-grey: #e7e7e7;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --color-section-bg: #dfdcdc;
+  --color-gray:#66666f;
+  --color-gradient: linear-gradient(gray, black);
+
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,59 @@
+/* Wrapper to prevent overflow */
+.payment-slider {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  position: relative;
+}
+
+/* Main slider container */
+.slider {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+}
+
+/* Individual cards */
+.payment-card {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-right: 0px; /* Remove space between cards */
+  flex-shrink: 0; /* Prevent shrinking */
+
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Button style */
+.trade-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 2px solid gold;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.trade-btn:hover {
+  background: gold;
+  color: black;
+}
+
+/* Keyframe for seamless infinite scrolling */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.33%); /* Move by one-third so it repeats */
+  }
+}

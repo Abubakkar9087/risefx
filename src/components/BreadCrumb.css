@@ -1,0 +1,10 @@
+.breadcrumb-container{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
