@@ -132,6 +132,7 @@
     }
     .section-3-cards{
         width: 100%;
+        min-height: 250px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -143,7 +144,7 @@
     }
     .trading-section3-child-1{
         max-width: 400px;
-        min-height: 250px;
+        min-height: 100px;
         padding: 10px;
         display: flex;
         justify-content: start;
@@ -303,6 +304,12 @@
         .trading-section2-child-2{
             min-width: 100%;
             min-height: 100%;
+        }
+        h1{
+            font-size: 25px !important;
+        }
+        h2{
+            font-size: 22px !important;
         }
     }
     @media(max-width: 400px){

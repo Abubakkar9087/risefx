@@ -420,5 +420,10 @@ a{
     .number{
         display: none;
     }
+    .nav-btns{
+      width: 100%;
+      align-items: center !important;
+      justify-content: center !important;
+    }
   }
   

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import Logo from '../images/risesvg.svg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  
+      const togglePopup = () => {
+          setShowPopup(!showPopup);
+      };
+
+
   return (
     <>
       <div className='navbar-container'>
@@ -34,11 +41,11 @@ const Navbar = () => {
               }
             `}</style>
           </div>
-          <div className='navbar-child'>
+          <div className='navbar-child nav-btns'>
             <button className='btn-open-account'>Open Account</button>
             <button className='btn-login'>Login</button>
             <div className='downlaod-app'>
-            <button className='btn-download'>Get App</button>
+            <button className='btn-download'onClick={togglePopup}>Get App</button>
             </div>
           </div>
         </div>
@@ -195,6 +202,23 @@ const Navbar = () => {
           Partner
           </Link>
         </div>
+        {showPopup && (
+                <div className='popup'>
+                    <button className='close-btn' onClick={togglePopup}>X</button>
+                    <div className='popup-content'>
+                        <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
+                        <a href='https://play.google.com/store/apps?hl=en'>
+                            <img src='images/android-download.png' className='download-icon' alt='error'/>
+                        </a>
+                    </div>
+                    <div className='popup-content'>
+                        <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
+                        <a href='https://www.apple.com/in/app-store/'>
+                            <img src='images/ios-download.png' className='download-icon' alt='error'/>
+                        </a>
+                    </div>
+                </div>
+            )}
       </div>
     </>
   );
