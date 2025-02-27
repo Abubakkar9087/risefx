@@ -92,6 +92,12 @@ const Herosection = () => {
   font-size: 1.2rem;
   font-weight: 300;
 }
+
+@media(max-width: 425px){
+.hero-section{
+height:70vh;
+}
+}
 `}
       </style>
     </div>

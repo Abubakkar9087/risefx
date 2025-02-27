@@ -207,13 +207,13 @@ const Navbar = () => {
                     <button className='close-btn' onClick={togglePopup}>X</button>
                     <div className='popup-content'>
                         <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
-                        <a href='https://play.google.com/store/apps?hl=en'>
+                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
                             <img src='images/android-download.png' className='download-icon' alt='error'/>
                         </a>
                     </div>
                     <div className='popup-content'>
                         <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
-                        <a href='https://www.apple.com/in/app-store/'>
+                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
                             <img src='images/ios-download.png' className='download-icon' alt='error'/>
                         </a>
                     </div>

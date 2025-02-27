@@ -21,9 +21,15 @@ const Download = () => {
 
                     </div>
                     <div className='download-inner-child download-btns'>
+                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
                         <img src='/images/android-icon.png' alt='error' className='download-img' />
+                        </a>
+                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
                         <img src='/images/ios-icon.png' alt='error' className='download-img' />
+                        </a>
+                        <a href=''>
                         <img src='/images/microsoft-icon.jpg' alt='error' className='download-img microsoft' />
+                        </a>
                         <img src='/images/qr-icon.jpg' alt='error' className='download-img' onClick={togglePopup} />
                     </div>
                 </div>
@@ -35,13 +41,13 @@ const Download = () => {
                     <button className='close-btn' onClick={togglePopup}>X</button>
                     <div className='popup-content'>
                         <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
-                        <a href='https://play.google.com/store/apps?hl=en'>
+                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
                             <img src='images/android-download.png' className='download-icon' alt='error'/>
                         </a>
                     </div>
                     <div className='popup-content'>
                         <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
-                        <a href='https://www.apple.com/in/app-store/'>
+                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
                             <img src='images/ios-download.png' className='download-icon' alt='error'/>
                         </a>
                     </div>

@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css'
 
 const Footer = () => {
+
+  const [showPopup, setShowPopup] = useState(false);
+  
+      const togglePopup = () => {
+          setShowPopup(!showPopup);
+      };
+      
   return (
     <div className='footer-container'>
       <div className='footer-section-1'>
@@ -59,12 +66,18 @@ const Footer = () => {
             <p>Download on the App Store</p>
           </div>
           <div className='inner-child5 inner-2'>
-            <img src='/images/icon-3.png' alt='error' className='download-img' />
+            <img src='/images/icon-3.png' alt='error' className='download-img' onClick={togglePopup}/>
           </div>
           <div className='inner-child5 inner-3'>
-            <img src='/images/android-icon.png' alt='error' className='download-img' />
-            <img src='/images/ios-icon.png' alt='error' className='download-img' />
-            <img src='/images/microsoft-ico.png' alt='error' className='download-img' />
+            <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
+              <img src='/images/android-icon.png' alt='error' className='download-img' />
+            </a>
+            <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
+              <img src='/images/ios-icon.png' alt='error' className='download-img' />
+            </a>
+            <a href=''>
+              <img src='/images/microsoft-icon.jpg' alt='error' className='download-img microsoft' />
+            </a>
           </div>
         </div>
       </div>
@@ -118,7 +131,7 @@ const Footer = () => {
       <div className='footer-section-4'>
         <div className='footer-child-1'>
           <p className='copyrights'>
-          Copyright © 2007-2024 <span className='footer-brand'>RiseFX</span>. All rights reserved.
+            Copyright © 2007-2024 <span className='footer-brand'>RiseFX</span>. All rights reserved.
           </p>
         </div>
         <div className='footer-child-2'>
@@ -128,6 +141,23 @@ const Footer = () => {
           <img src='/images/social-1.png' alt='error' />
         </div>
       </div>
+      {showPopup && (
+                <div className='popup'>
+                    <button className='close-btn' onClick={togglePopup}>X</button>
+                    <div className='popup-content'>
+                        <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
+                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
+                            <img src='images/android-download.png' className='download-icon' alt='error'/>
+                        </a>
+                    </div>
+                    <div className='popup-content'>
+                        <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
+                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
+                            <img src='images/ios-download.png' className='download-icon' alt='error'/>
+                        </a>
+                    </div>
+                </div>
+            )}
     </div>
   );
 }

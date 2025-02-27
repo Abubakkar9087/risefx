@@ -80,7 +80,7 @@
         width: 100%;
         padding: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         min-height: 100vh;
@@ -114,12 +114,16 @@
 
     }
     .trading-section2-child-2{
-        min-width: 500px;
-        min-height: 500px;
-        background-color: var(--color-secondary);
-        background-image: url(/public/images/section-trade.jpg);
-        background-size: cover;
-        background-position: center;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width:500px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
     }
     .trading-section-3{
         min-height: 250px;
@@ -310,6 +314,17 @@
         }
         h2{
             font-size: 22px !important;
+        }
+        .trading-section2-child-2{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img{
+                width:100%;
+                object-fit: contain;
+            }
         }
     }
     @media(max-width: 400px){
