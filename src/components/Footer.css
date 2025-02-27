@@ -22,7 +22,7 @@
     .footer-child-2,
     .footer-child-3,
     .footer-child-4{
-        width: 180px;
+        width: 150px;
         min-height: 200px;
         display: flex;
         justify-content: start;
