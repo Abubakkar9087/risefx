@@ -169,9 +169,7 @@
 
         .footer-para{
             width: 100%;
-            font-size: 14px;
-            line-height: 1.5;
-            letter-spacing: 1.5px;
+            font-size: 12px;
         }
     }
 }
@@ -271,8 +269,6 @@
 @media (max-width: 425px){
     .footer-para{
         font-size: 9px !important;
-        line-height: normal !important;
-        letter-spacing: normal !important;
     }
     .copyrights{
         font-size: 12px;
