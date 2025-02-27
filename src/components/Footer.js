@@ -137,6 +137,7 @@ const Footer = () => {
         </div>
       </div>
         <div className='footer-child-2'>
+          <p className='social-media'>Stay Connected: </p>
           <img src='/images/social-1.png' alt='error' />
           <img src='/images/social-1.png' alt='error' />
           <img src='/images/social-1.png' alt='error' />
