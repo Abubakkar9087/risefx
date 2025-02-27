@@ -19,7 +19,7 @@
     }
     .trading-section1-child-1{
     width: 100%;
-    min-height: 300px;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +290,9 @@
             flex-wrap: wrap;
             gap: 20px;
             min-height: 100vh;
+        }
+        h1{
+            font-size: 35px !important;
         }
     }
     @media(max-width:570px){
