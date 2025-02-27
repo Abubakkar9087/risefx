@@ -218,6 +218,11 @@
         }
     }
 }
+@media(max-width: 1000px){
+.footer-container{
+    margin-bottom: 50px;
+}    
+}
 @media(max-width:880px){
     .footer-section-4{
         flex-direction: column-reverse;

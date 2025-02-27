@@ -122,7 +122,6 @@ const Footer = () => {
           </p>
         </div>
         <div className='footer-child-2'>
-        <h3 className='follow-on'>Follow Us On: </h3>
           <img src='/images/social-1.png' alt='error' />
           <img src='/images/social-1.png' alt='error' />
           <img src='/images/social-1.png' alt='error' />
