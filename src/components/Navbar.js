@@ -1,14 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import Logo from '../images/risesvg.svg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showPopup, setShowPopup] = useState(false);
-  
-      const togglePopup = () => {
-          setShowPopup(!showPopup);
-      };
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
+  const messages = [
+    "Register Now And Get Free Credits",
+    "Start Now With Demo Account"
+  ];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % messages.length);
+    }, 3000); // Change message every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
 
   return (
@@ -16,36 +30,24 @@ const Navbar = () => {
       <div className='navbar-container'>
         <div className='navbar-1'>
           <div className='navbar-child number'>
-            <img src='/images/call-icon.png' alt='error'  className='call-icon'/>
+            <img src='/images/call-icon.png' alt='error' className='call-icon' />
             <span style={{ marginLeft: '5px' }}>+91 9876543210</span>
           </div>
           <div className='navbar-child text-changing'>
             <div className='navbar-child'>
-              <p>
-                {['We are available 24/7', 'Call us for any query', 'We are happy to help'].map((text, i) => (
-                  <span key={i} style={{ animationDelay: `${i * 3}s` }} className="auto-text">
-                    {text}
-                  </span>
-                ))}
-              </p>
+            <div className="scrolling-text-container">
+        <div key={index} className="scrolling-text">
+          {messages[index]}
+        </div>
+      </div>
             </div>
-            <style>{`
-              .auto-text {
-                animation: autoText 6s ease-in-out infinite;
-              }
-              @keyframes autoText {
-                0% { opacity: 0; }
-                20% { opacity: 1; }
-                80% { opacity: 1; }
-                100% { opacity: 0; }
-              }
-            `}</style>
+
           </div>
           <div className='navbar-child nav-btns'>
             <button className='btn-open-account'>Open Account</button>
             <button className='btn-login'>Login</button>
             <div className='downlaod-app'>
-            <button className='btn-download'onClick={togglePopup}>Get App</button>
+              <button className='btn-download' onClick={togglePopup}>Get App</button>
             </div>
           </div>
         </div>
@@ -62,16 +64,16 @@ const Navbar = () => {
                 </li>
               </Link>
 
-                <Link to='/About'>
-              <li className='navbar-item has-dropdown'>
-                About
-                {/* <div className='dropdown'>
+              <Link to='/About'>
+                <li className='navbar-item has-dropdown'>
+                  About
+                  {/* <div className='dropdown'>
                   <Link to='/mission'>Our Mission</Link>
                   <Link to='/services'>Our Services</Link>
                   <Link to='/whyrisefx'>Why RiseFX</Link>
                 </div> */}
-              </li>
-                  </Link>
+                </li>
+              </Link>
 
               <li className='navbar-item has-dropdown'>
                 Services
@@ -117,7 +119,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="custom-hamburger" onClick={() => document.querySelector('.custom-ham-nav').classList.toggle('custom-active')}>
             <img src="/images/hamburger.png" alt="menu" />
             <div className="custom-ham-nav">
@@ -182,43 +184,43 @@ const Navbar = () => {
         </div>
         <div className='mobile-icon'>
           <Link to='/'>
-          <img src='/images/home-icon.svg' alt='error'/>
-          Home
+            <img src='/images/home-icon.svg' alt='error' />
+            Home
           </Link>
           <Link to='/'>
-          <img src='/images/about-icon.svg' alt='error'/>
-          About
+            <img src='/images/about-icon.svg' alt='error' />
+            About
           </Link>
           <Link to='/'>
-          <img src='/images/services-icon.svg' alt='error'/>
-          Services
+            <img src='/images/services-icon.svg' alt='error' />
+            Services
           </Link>
           <Link to='/'>
-          <img src='/images/contact-icon.svg' alt='error'/>
-          Contact
+            <img src='/images/contact-icon.svg' alt='error' />
+            Contact
           </Link>
           <Link to='/'>
-          <img src='/images/partner.svg' alt='error'/>
-          Partner
+            <img src='/images/partner.svg' alt='error' />
+            Partner
           </Link>
         </div>
         {showPopup && (
-                <div className='popup'>
-                    <button className='close-btn' onClick={togglePopup}>X</button>
-                    <div className='popup-content'>
-                        <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
-                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
-                            <img src='images/android-download.png' className='download-icon' alt='error'/>
-                        </a>
-                    </div>
-                    <div className='popup-content'>
-                        <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
-                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
-                            <img src='images/ios-download.png' className='download-icon' alt='error'/>
-                        </a>
-                    </div>
-                </div>
-            )}
+          <div className='popup'>
+            <button className='close-btn' onClick={togglePopup}>X</button>
+            <div className='popup-content'>
+              <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
+              <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
+                <img src='images/android-download.png' className='download-icon' alt='error' />
+              </a>
+            </div>
+            <div className='popup-content'>
+              <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
+              <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
+                <img src='images/ios-download.png' className='download-icon' alt='error' />
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

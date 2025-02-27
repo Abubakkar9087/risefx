@@ -117,7 +117,7 @@ const TradingAccount = () => {
                     </div>
                     <div className='section-4-inner-child-1'>
                         <h2 className='heading'>Commodities Trading</h2>
-                        <img src='/images/trading-1.png' />
+                        <img src='/images/commodities-icon.png' />
                         <div className='section-4-cards-hover'>
                             <p>One of the primary methods of gold trading is through the spot</p>
                             <button className='section-4-hoverbtn'>Start Trading Now</button>

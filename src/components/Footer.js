@@ -8,10 +8,14 @@ const Footer = () => {
       const togglePopup = () => {
           setShowPopup(!showPopup);
       };
-      
+
   return (
     <div className='footer-container'>
       <div className='footer-section-1'>
+      <div className='footer-child-logo'>
+          <img src='/images/risesvg.svg' alt='error' className='download-img' />
+          <p className='brand-para'>RISEFX is a leading financial trading platform offering a comprehensive suite of investment services, empowering traders worldwide to navigate the markets with confidence.</p>
+        </div>
         <div className='footer-child-1'>
           <ul className='footer-ul'>
             <h3 className='ul-heading'>About Us</h3>
@@ -60,7 +64,7 @@ const Footer = () => {
             <li className='footer-list'>Trading Videos</li>
           </ul>
         </div>
-        <div className='footer-child-5'>
+        {/* <div className='footer-child-5'>
           <div className='inner-child5 inner-1'>
             <img src='/images/risesvg.svg' alt='error' className='download-img' />
             <p>Download on the App Store</p>
@@ -79,22 +83,9 @@ const Footer = () => {
               <img src='/images/microsoft-icon.jpg' alt='error' className='download-img microsoft' />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className='footer-section-2'>
-        <div className='footer-child-1'>
-          <img src='/images/risesvg.svg' alt='error' className='download-img' />
-        </div>
-        <div className='footer-child-2'>
-          <h3 className='payment-accept'>We Accept: </h3>
-          <img src='/images/card-1.png' alt='error' />
-          <img src='/images/card-2.png' alt='error' />
-          <img src='/images/card-3.png' alt='error' />
-          <img src='/images/card-4.png' alt='error' />
-          <img src='/images/card-5.png' alt='error' />
-          <img src='/images/card-6.png' alt='error' />
-        </div>
-      </div>
+
       <div className='footer-section-3'>
         <div className='footer-child-1'>
           <p className='footer-para'>RISEFX is incorporated in Mauritius with registration number - C191579
@@ -134,6 +125,17 @@ const Footer = () => {
             Copyright © 2007-2024 <span className='footer-brand'>RiseFX</span>. All rights reserved.
           </p>
         </div>
+        <div className='footer-section-2'>
+        
+        <div className='footer-child-payment'>
+          <img src='/images/card-1.png' alt='error' />
+          <img src='/images/card-2.png' alt='error' />
+          <img src='/images/card-3.png' alt='error' />
+          <img src='/images/card-4.png' alt='error' />
+          <img src='/images/card-5.png' alt='error' />
+          <img src='/images/card-6.png' alt='error' />
+        </div>
+      </div>
         <div className='footer-child-2'>
           <img src='/images/social-1.png' alt='error' />
           <img src='/images/social-1.png' alt='error' />

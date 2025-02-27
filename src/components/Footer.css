@@ -116,26 +116,14 @@
     }
 }
 .footer-section-2{
-    width: 100%;
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 30px;
 
-    .footer-child-1{
-        width: auto;
-        padding: 10px;
-        min-height: 100px;
-
-        img{
-            width: 60px;
-        }
-    }
-
-    .footer-child-2{
+    
+    .footer-child-payment{
         display: flex;
         padding: 10px;
         justify-content: center;
@@ -146,6 +134,15 @@
         h3{
             font-size: 20px;
         }
+    }
+}
+.footer-child-logo{
+    width: auto;
+    padding: 10px;
+    min-height: 100px;
+
+    img{
+        width: 60px;
     }
 }
 .footer-section-3{
@@ -171,10 +168,17 @@
 
         .footer-para{
             width: 100%;
+            font-size: 14px;
             line-height: 1.5;
             letter-spacing: 1.5px;
         }
     }
+}
+.brand-para{
+    max-width: 300px;
+}
+.copyrights{
+    padding: 10px;
 }
 .footer-section-4{
     width: 100%;
@@ -224,8 +228,8 @@
     margin-bottom: 50px;
 }    
 }
-@media(max-width:880px){
-    .footer-section-4{
-        flex-direction: column-reverse;
+@media(max-width: 768px){
+    .footer-para{
+        font-size: 10px;
     }
 }

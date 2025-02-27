@@ -12,6 +12,40 @@
 a{
     text-decoration: none;
 }
+.scrolling-text-container {
+  height: 40px;
+  min-width: 300px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-text {
+  position: absolute;
+  font-size: 16px;
+  white-space: nowrap;
+  animation: slideText 5s infinite;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
 .number{
   font-size: 18px;
   font-weight: 600;
