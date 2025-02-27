@@ -117,28 +117,6 @@ a{
     border: 0.5px solid var(--color-primary);
 }
 
-/* .btn-download::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 150%; /* Make it wide enough */
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
-    transform: skewX(-30deg);
-    opacity: 0.7;
-    animation: shine 1.5s infinite linear;
-} */
-
-/* Keyframes for shine effect */
-/* @keyframes shine {
-    0% {
-        left: -150%;
-    }
-    100% {
-        left: 150%;
-    }
-} */
 
     
     .navbar-list{
@@ -212,7 +190,7 @@ a{
             }
         }
     }
-
+}   
 /* Navbar General Styles */  
   /* Logo */
   
