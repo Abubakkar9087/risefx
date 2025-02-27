@@ -22,7 +22,7 @@
     .footer-child-2,
     .footer-child-3,
     .footer-child-4{
-        width: 150px;
+        width: 140px;
         min-height: 200px;
         display: flex;
         justify-content: start;
@@ -30,6 +30,7 @@
         flex-direction: column;
         padding: 20px;
         gap: 20px;
+        text-wrap: nowrap;
     }
     .footer-ul{
         width: 100%;
@@ -43,11 +44,12 @@
     }
     .ul-heading{
         color: var(--color-secondary);
+        font-size: 15px;
     }
     .footer-list{
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        font-size: 17px;
+        font-size: 13px;
         font-weight: 400;
         &:hover{
             color: var(--color-primary);
@@ -174,9 +176,11 @@
     }
 }
 .brand-para{
+    color: var(--color-gray);
     max-width: 300px;
 }
 .copyrights{
+    font-size: 14px;
     padding: 10px;
 }
 .footer-section-4{
@@ -230,5 +234,15 @@
 @media(max-width: 768px){
     .footer-para{
         font-size: 10px;
+    }
+}
+@media (max-width: 425px){
+    .footer-para{
+        font-size: 9px !important;
+        line-height: normal !important;
+        letter-spacing: normal !important;
+    }
+    .copyrights{
+        font-size: 12px;
     }
 }
