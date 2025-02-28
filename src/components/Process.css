@@ -127,5 +127,11 @@
 @media(max-width: 680px){
     .process-card-2{
         min-width: 100%;
+        min-height: 400px;
+    }
+}
+@media(max-width: 425px){
+    .process-card-2{
+        min-height: 300px;
     }
 }
