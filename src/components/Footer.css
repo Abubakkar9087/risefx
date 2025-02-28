@@ -34,7 +34,7 @@
 
     .footer-ul{
         width: 100%;
-        display: flex;
+        display: flex !important;
         justify-content: start;
         align-items: start;
         flex-direction: column;
