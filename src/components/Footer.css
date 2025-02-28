@@ -38,7 +38,7 @@
         justify-content: start;
         align-items: start;
         flex-direction: column;
-        gap: 15px !important;
+        gap: 10px !important;
         list-style: none;
         color: var(--color-gray);
     }
