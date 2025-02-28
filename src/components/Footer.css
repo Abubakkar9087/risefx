@@ -24,7 +24,6 @@
     .footer-child-3,
     .footer-child-4{
         width: 140px;
-        min-height: 200px;
         display: flex;
         justify-content: start;
         align-items: start;
