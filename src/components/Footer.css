@@ -186,6 +186,8 @@
 .copyrights{
     font-size: 14px;
     padding: 10px;
+    padding-top: 0% !important;
+    padding-bottom: 2px !important;
 }
 .footer-section-4{
     width: 100%;
@@ -193,10 +195,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
     padding: 30px;
     padding-top: 0px !important;
+    padding-bottom: 0% !important;
 
     .footer-child-1{
         font-size: 17px;
@@ -215,6 +217,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 15px;
+        padding-top: 0%    ;
 
         .social-imgs{
             width: 50px;
