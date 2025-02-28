@@ -217,7 +217,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 15px;
-        padding-top: 0%    ;
+        padding-top: 0% !important;
 
         .social-imgs{
             width: 50px;
