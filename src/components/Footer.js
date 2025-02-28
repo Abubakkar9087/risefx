@@ -4,15 +4,15 @@ import './Footer.css'
 const Footer = () => {
 
   const [showPopup, setShowPopup] = useState(false);
-  
-      const togglePopup = () => {
-          setShowPopup(!showPopup);
-      };
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
 
   return (
     <div className='footer-container'>
       <div className='footer-section-1'>
-      <div className='footer-child-logo'>
+        <div className='footer-child-logo'>
           <img src='/images/risesvg.svg' alt='error' className='download-img' />
           <p className='brand-para'>RISEFX is a leading financial trading platform offering a comprehensive suite of investment services, empowering traders worldwide to navigate the markets with confidence.</p>
         </div>
@@ -126,41 +126,49 @@ const Footer = () => {
           </p>
         </div>
         <div className='footer-section-2'>
-        
-        <div className='footer-child-payment'>
-          <img src='/images/card-1.png' alt='error' />
-          <img src='/images/card-2.png' alt='error' />
-          <img src='/images/card-3.png' alt='error' />
-          <img src='/images/card-4.png' alt='error' />
-          <img src='/images/card-5.png' alt='error' />
-          <img src='/images/card-6.png' alt='error' />
+
+          <div className='footer-child-payment'>
+            <img src='/images/card-1.png' alt='error' />
+            <img src='/images/card-2.png' alt='error' />
+            <img src='/images/card-3.png' alt='error' />
+            <img src='/images/card-4.png' alt='error' />
+            <img src='/images/card-5.png' alt='error' />
+            <img src='/images/card-6.png' alt='error' />
+          </div>
         </div>
-      </div>
         <div className='footer-child-2'>
           <p className='social-media'>Stay Connected: </p>
-          <img src='/images/social-1.png' alt='error' />
-          <img src='/images/social-1.png' alt='error' />
-          <img src='/images/social-1.png' alt='error' />
-          <img src='/images/social-1.png' alt='error' />
+          <div className='social-imgs'>
+            <img src='/images/social-1.svg' alt='error' />
+          </div>
+          <div className='social-imgs'>
+            <img src='/images/facebook-icon.svg' alt='error' />
+          </div>
+          <div className='social-imgs'>
+            <img src='/images/twitter-icon.svg' alt='error' />
+          </div>
+          <div className='social-imgs'>
+            <img src='/images/linkedin.svg' alt='error' />
+          </div>
         </div>
       </div>
       {showPopup && (
-                <div className='popup'>
-                    <button className='close-btn' onClick={togglePopup}>X</button>
-                    <div className='popup-content'>
-                        <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
-                        <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
-                            <img src='images/android-download.png' className='download-icon' alt='error'/>
-                        </a>
-                    </div>
-                    <div className='popup-content'>
-                        <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
-                        <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
-                            <img src='images/ios-download.png' className='download-icon' alt='error'/>
-                        </a>
-                    </div>
-                </div>
-            )}
+        <div className='popup'>
+          <button className='close-btn' onClick={togglePopup}>X</button>
+          <div className='popup-content'>
+            <img src='/images/QRcode1.png' alt='QR Code 1' className='qr-img' />
+            <a href='https://panel.therisefx.com/platform/TheRiseFX-1.0.apk'>
+              <img src='images/android-download.png' className='download-icon' alt='error' />
+            </a>
+          </div>
+          <div className='popup-content'>
+            <img src='/images/QRcode2.png' alt='QR Code 2' className='qr-img' />
+            <a href='https://apps.apple.com/us/app/mobiustrader-7/id1355359598'>
+              <img src='images/ios-download.png' className='download-icon' alt='error' />
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
